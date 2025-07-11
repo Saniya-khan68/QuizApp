@@ -1,8 +1,8 @@
- import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TakeQuiz.css';
 
-const hardcodedQuizzes = ['c', 'python', 'java'];
+const hardcodedQuizzes = ['c', 'python', 'java', 'cpp', 'webtech', 'php', 'datascience'];
 
 const TakeQuiz = () => {
   const navigate = useNavigate();
