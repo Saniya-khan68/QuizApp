@@ -1,0 +1,134 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  min-height: 100vh;
+}
+
+.quiz-wrapper {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.quiz-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 12px;
+  color: #2c3e50;
+  text-transform: capitalize;
+}
+
+.timer {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #e74c3c;
+  margin-bottom: 25px;
+}
+
+.question {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: #34495e;
+  text-align: center;
+}
+
+.option-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option-list li {
+  margin-bottom: 14px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  background-color: #f5f8fa;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.option-list li:hover {
+  background-color: #eaf2ff;
+}
+
+.option-list li label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.option-list input[type="radio"] {
+  margin-right: 16px;
+  transform: scale(1.2);
+  accent-color: #007bff;
+}
+
+.correct {
+  background-color: #d4edda !important;
+  border-color: #28a745 !important;
+}
+
+.incorrect {
+  background-color: #f8d7da !important;
+  border-color: #dc3545 !important;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  background-color: #b0cfff;
+  cursor: not-allowed;
+}
+
+.result-box {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

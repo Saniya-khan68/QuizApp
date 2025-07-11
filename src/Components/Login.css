@@ -1,0 +1,87 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+.login-form input {
+  padding: 0 16px;
+  height: 48px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fefefe;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  border-color: #5fbb4f;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 126, 95, 0.3);
+}
+
+.login-form button {
+  height: 48px;
+  width: 100%;
+  background: linear-gradient(to right, #041670, #feb47b);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+  background: linear-gradient(to right, #bd1739, #9148df);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
